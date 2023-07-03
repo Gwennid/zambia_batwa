@@ -1,0 +1,19 @@
+qp3Pop: parameter file: par.f3test.20230703_Batwa_popfile
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+indivname: omni1finalmerge_ancient4fexhap_2.indiv
+snpname: omni1finalmerge_ancient4fexhap_2.snp
+genotypename: omni1finalmerge_ancient4fexhap_2.geno
+popfilename: 20230703_Batwa_popfile
+inbreed: yes
+## qp3Pop version: 412
+nplist: 5
+number of blocks for block jackknife: 548
+snps: 344644
+                      Source 1             Source 2               Target           f_3       std. err           Z    SNPs
+ result:                 Batwa                  YRI            Bangweulu      0.011806       0.000185      63.726  324983
+ result:                 Batwa                  YRI                Kafue      0.008921       0.000162      55.084  325107
+ result:                 Batwa                  YRI         Zambia_Bemba      0.020228       0.000217      93.324  322992
+ result:                 Batwa                  YRI          Zambia_Lozi      0.011633       0.000173      67.204  324985
+ result:                 Batwa                  YRI      Zambia_TongaZam      0.030853       0.000283     109.160  322444
+##end of qp3Pop
