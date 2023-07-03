@@ -1,0 +1,19 @@
+qp3Pop: parameter file: par.f3test.20230703_Sabue_popfile
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+indivname: omni1finalmerge_ancient4fexhap_2.indiv
+snpname: omni1finalmerge_ancient4fexhap_2.snp
+genotypename: omni1finalmerge_ancient4fexhap_2.geno
+popfilename: 20230703_Sabue_popfile
+inbreed: yes
+## qp3Pop version: 412
+nplist: 5
+number of blocks for block jackknife: 548
+snps: 344644
+                      Source 1             Source 2               Target           f_3       std. err           Z    SNPs
+ result:        Ethiopia_Sabue                  YRI            Bangweulu      0.013879       0.000204      67.921  324487
+ result:        Ethiopia_Sabue                  YRI                Kafue      0.012367       0.000198      62.439  324685
+ result:        Ethiopia_Sabue                  YRI         Zambia_Bemba      0.022015       0.000267      82.545  322229
+ result:        Ethiopia_Sabue                  YRI          Zambia_Lozi      0.012830       0.000199      64.485  324470
+ result:        Ethiopia_Sabue                  YRI      Zambia_TongaZam      0.032746       0.000332      98.577  321593
+##end of qp3Pop
