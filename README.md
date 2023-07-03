@@ -2,6 +2,13 @@
 
 This repository contains information underlying the Zambia BaTwa project (using SNP array data).
 
+## Key information for working on rackham
+
+- Computing project: p2018003
+- Main location: /crex/proj/snic2020-2-10/uppstore2018150/private/
+- Latest prepared data: /crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020
+- Interactive job: interactive -A p2018003 -p core -n 2 -t 2:00:00 -M snowy
+
 ## Reviewers' suggestions (Nature Communication, May 2023)
 
 See detailed list here: https://docs.google.com/spreadsheets/d/1inscyyqnBAOLQqxBt7nqAnn5EemPRPEfkv3cfkEa8N8/edit#gid=0
