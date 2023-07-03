@@ -6,6 +6,7 @@
 
 folder=/crex/proj/snic2020-2-10/uppstore2018150/private/results/f3test/20210128
 cd $folder
+module load bioinfo-tools AdmixTools/5.0-20171024
 
 #Batwa from Uganda
 head -5 20210128_popfile1 | sed 's/baa001/Batwa/g' > 20230703_Batwa_popfile
