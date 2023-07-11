@@ -6,3 +6,6 @@ The outputs were modified manually to include only relevant columns for plotting
 
 The ratio were plotted with R (code: `main/code/plot_f4ratio.R`). The resulting figure is `main/results/revisions_NatureCommunication/f4ratio/20230710_f4ratio_test_rRHG-Batwa_eHG-Sabue_ancestry_in15pop20230703.pdf`.
 
+Correlations between estimates made with different source populations were calculated in `main/code/plot_f4ratio.R`.
+
+The estimated admixture fractions for the five Zambian populations were written out in `main/code/plot_f4ratio.R`.
