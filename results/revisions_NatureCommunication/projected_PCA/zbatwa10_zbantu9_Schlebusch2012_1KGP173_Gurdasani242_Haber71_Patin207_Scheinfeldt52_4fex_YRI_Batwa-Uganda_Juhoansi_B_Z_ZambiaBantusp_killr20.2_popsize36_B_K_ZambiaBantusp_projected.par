@@ -1,0 +1,12 @@
+genotypename:     zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp.bed
+snpname:          zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp.bim
+indivname:        zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp.pedind
+evecoutname:      zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp_killr20.2_popsize36_B_K_ZambiaBantusp_projected.evec 
+evaloutname:      zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp_killr20.2_popsize36_B_K_ZambiaBantusp_projected.eval
+numeigs:          10
+qtmode:           NO
+killr2:           YES
+r2thresh:         0.2
+numoutlieriter:   0
+popsizelimit:     36
+poplistname:	YRI_Batwa-Uganda_Juhoansi_poplist

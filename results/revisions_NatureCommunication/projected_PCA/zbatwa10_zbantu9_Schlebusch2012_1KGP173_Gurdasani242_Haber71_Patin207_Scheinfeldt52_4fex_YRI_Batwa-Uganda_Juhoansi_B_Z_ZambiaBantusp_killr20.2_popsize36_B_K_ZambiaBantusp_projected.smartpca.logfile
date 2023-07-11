@@ -1,0 +1,350 @@
+parameter file: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp_killr20.2_popsize36_B_K_ZambiaBantusp_projected.par
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp.bed
+snpname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp.bim
+indivname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp.pedind
+evecoutname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp_killr20.2_popsize36_B_K_ZambiaBantusp_projected.evec
+evaloutname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp_killr20.2_popsize36_B_K_ZambiaBantusp_projected.eval
+numeigs: 10
+qtmode: NO
+killr2: YES
+r2thresh: 0.2
+numoutlieriter: 0
+popsizelimit: 36
+poplistname: YRI_Batwa-Uganda_Juhoansi_poplist
+## smartpca version: 16000
+seed: 2728178271
+norm used
+
+genetic distance set from physical distance
+genotype file processed
+killr2 complete
+killhir2.  number of snps killed: 165082
+number of samples used: 76 number of snps used: 190794
+Using 19 threads, and partial sum lookup algorithm.
+ snp            1-1121794 ignored . allelecnt:     0  missing:     0
+ snp            1-3241135 ignored . allelecnt:     0  missing:     0
+ snp            1-4367922 ignored . allelecnt:     0  missing:     0
+ snp            1-4572778 ignored . allelecnt:     0  missing:     0
+ snp            1-4724957 ignored . allelecnt:     0  missing:     0
+ snp            1-5259095 ignored . allelecnt:     0  missing:     0
+ snp            1-5680808 ignored . allelecnt:     0  missing:     0
+ snp            1-7887605 ignored . allelecnt:     0  missing:     0
+ snp            1-8999506 ignored . allelecnt:     0  missing:     0
+ snp           1-10260592 ignored . allelecnt:     0  missing:     1
+total number of snps killed in pass: 2849  used: 187945
+
+## Tracy-Widom statistics: rows: 76  cols: 190794
+  #N    eigenvalue  difference    twstat      p-value effect. n
+   1      4.612664          NA    50.849 5.49436e-107   310.429
+   2      3.037826   -1.574839    70.712  3.3553e-174   946.559
+   3      1.183697   -1.854129     2.766   0.00266314  4845.213
+   4      1.181728   -0.001968     4.090  0.000181407  5040.349
+   5      1.114109   -0.067619    -3.572      0.97796  5277.695
+   6      1.099391   -0.014718    -4.693     0.999126  5361.632
+   7      1.030510   -0.068881   -13.619            1  5426.626
+   8      1.028999   -0.001511   -13.400            1  5358.265
+   9      1.025441   -0.003558   -13.462            1  5290.812
+  10      1.023471   -0.001970   -13.302            1  5220.991
+  11      1.021056   -0.002416   -13.199            1  5151.372
+  12      1.018572   -0.002484   -13.102            1  5081.275
+  13      1.017422   -0.001150   -12.819            1  5010.622
+  14      1.016150   -0.001272   -12.544            1  4941.652
+  15      1.015074   -0.001076   -12.236            1  4874.290
+  16      1.011992   -0.003083   -12.185            1  4809.012
+  17      1.009535   -0.002457   -12.049            1  4742.493
+  18      1.008077   -0.001457   -11.776            1  4675.831
+  19      1.006151   -0.001926   -11.556            1  4610.840
+  20      1.003911   -0.002240   -11.368            1  4546.840
+  21      1.002077   -0.001834   -11.121            1  4483.385
+  22      1.000287   -0.001790   -10.859            1  4421.327
+  23      0.999946   -0.000341   -10.404            1  4360.914
+  24      0.997843   -0.002103   -10.153            1  4305.149
+  25      0.995265   -0.002578    -9.952            1  4251.002
+  26      0.994828   -0.000437    -9.475            1  4197.731
+  27      0.993159   -0.001669    -9.129            1  4149.996
+  28      0.989426   -0.003733    -9.021            1  4105.805
+  29      0.988506   -0.000920    -8.562            1  4061.008
+  30      0.986679   -0.001827    -8.191            1  4022.153
+  31      0.983480   -0.003199    -7.965            1  3987.932
+  32      0.981934   -0.001545    -7.526            1  3955.628
+  33      0.980300   -0.001634    -7.071            1  3929.986
+  34      0.979309   -0.000991    -6.507            1  3911.969
+  35      0.978243   -0.001067    -5.911     0.999996  3905.006
+  36      0.977066   -0.001177    -5.279     0.999912  3911.263
+  37      0.973352   -0.003714    -4.897     0.999586  3933.523
+  38      0.970986   -0.002366    -4.314     0.996949  3966.125
+  39      0.966797   -0.004189    -3.893     0.989924  4017.367
+  40      0.964624   -0.002173    -3.173     0.949312  4084.157
+  41      0.963284   -0.001340    -2.253     0.792755  4181.542
+  42      0.959813   -0.003471    -1.466     0.562821  4325.774
+  43      0.958424   -0.001389    -0.266     0.221401  4521.439
+  44      0.929721   -0.028703    -2.562      0.86103  4810.398
+  45      0.923469   -0.006252    -2.233     0.787798  4967.151
+  46      0.917542   -0.005927    -1.813     0.671287  5154.594
+  47      0.903982   -0.013560    -2.444     0.836842  5386.341
+  48      0.896277   -0.007705    -2.353     0.816525  5580.652
+  49      0.892255   -0.004022    -1.700     0.636749  5793.973
+  50      0.885935   -0.006320    -1.280     0.503531  6088.160
+  51      0.879731   -0.006204    -0.761      0.34592  6458.558
+  52      0.872748   -0.006982    -0.259     0.219715  6942.164
+  53      0.847189   -0.025560    -2.911     0.918866  7574.770
+  54      0.844313   -0.002875    -2.239     0.789139  7803.431
+  55      0.840498   -0.003815    -1.596     0.604221  8160.217
+  56      0.829691   -0.010807    -2.114     0.756906  8684.421
+  57      0.816309   -0.013382    -3.305     0.960904  9128.646
+  58      0.807221   -0.009088    -3.956      0.99148  9294.917
+  59      0.803532   -0.003689    -3.686     0.983125  9285.163
+  60      0.797538   -0.005994    -3.811     0.987577  9310.536
+  61      0.795587   -0.001951    -3.185     0.950408  9263.810
+  62      0.791627   -0.003960    -2.809     0.904089  9371.865
+  63      0.786363   -0.005263    -2.590     0.866517  9590.125
+  64      0.783432   -0.002931    -1.862     0.685664  9881.847
+  65      0.772308   -0.011124    -2.506     0.849897 10599.246
+  66      0.768059   -0.004249    -2.032     0.734728 10882.240
+  67      0.760397   -0.007662        NA           NA        NA
+  68      0.751652   -0.008745        NA           NA        NA
+  69      0.745294   -0.006358        NA           NA        NA
+  70      0.742467   -0.002827        NA           NA        NA
+  71      0.732855   -0.009612        NA           NA        NA
+  72      0.721957   -0.010898        NA           NA        NA
+  73      0.718277   -0.003679        NA           NA        NA
+  74      0.704125   -0.014153        NA           NA        NA
+  75      0.686244   -0.017881        NA           NA        NA
+    kurtosis           snps    indivs
+ eigenvector    1     3.098     2.400
+ eigenvector    2     3.092     2.074
+ eigenvector    3     6.342    38.093
+ eigenvector    4     3.720    10.232
+ eigenvector    5     3.599     6.408
+ eigenvector    6     3.582     5.912
+ eigenvector    7     3.519     9.355
+ eigenvector    8     3.476     9.086
+ eigenvector    9     3.357     5.925
+ eigenvector   10     3.244     4.887
+population:   0                Batwa   23
+population:   1             Juhoansi   17
+population:   2                  YRI   36
+
+## Average divergence between populations:
+                Batwa   Juhoansi        YRI     popsize
+     Batwa      0.999      1.109      1.135          23
+  Juhoansi      1.109      0.895      1.179          17
+       YRI      1.135      1.179      1.106          36
+
+
+number of blocks for moving block jackknife: 547
+
+fst *1000:
+          B     J     Y 
+   B      0    92    43
+   J     92     0    98
+   Y     43    98     0
+
+s.dev * 1000000:
+          B     J     Y 
+   B      0   636   479
+   J    636     0   603
+   Y    479   603     0
+
+eigenvector 1:means
+                 YRI     -0.089
+               Batwa     -0.011
+            Juhoansi      0.204
+## Anova statistics for population differences along each eigenvector:
+                                              p-value
+                  eigenvector_1_overall_             0 +++
+                  YRI minv:    -0.089             Juhoansi maxv:     0.204
+           eigenvector_1_Batwa_Juhoansi_   1.11022e-16 +++
+                eigenvector_1_Batwa_YRI_             0 +++
+             eigenvector_1_Juhoansi_YRI_             0 +++
+eigenvector 2:means
+               Batwa     -0.168
+            Juhoansi      0.064
+                 YRI      0.077
+                  eigenvector_2_overall_             0 +++
+                Batwa minv:    -0.168                  YRI maxv:     0.077
+           eigenvector_2_Batwa_Juhoansi_             0 +++
+                eigenvector_2_Batwa_YRI_             0 +++
+             eigenvector_2_Juhoansi_YRI_             0 +++
+eigenvector 3:means
+               Batwa     -0.037
+            Juhoansi      0.004
+                 YRI      0.022
+                  eigenvector_3_overall_      0.163466 
+                Batwa minv:    -0.037                  YRI maxv:     0.022
+           eigenvector_3_Batwa_Juhoansi_      0.417807 
+                eigenvector_3_Batwa_YRI_     0.0953247 
+             eigenvector_3_Juhoansi_YRI_   0.000113836 ***
+eigenvector 4:means
+                 YRI     -0.011
+            Juhoansi      0.002
+               Batwa      0.016
+                  eigenvector_4_overall_      0.679231 
+                  YRI minv:    -0.011                Batwa maxv:     0.016
+           eigenvector_4_Batwa_Juhoansi_      0.781356 
+                eigenvector_4_Batwa_YRI_      0.440544 
+             eigenvector_4_Juhoansi_YRI_    0.00985216 
+eigenvector 5:means
+                 YRI     -0.005
+            Juhoansi     -0.003
+               Batwa      0.010
+                  eigenvector_5_overall_      0.877184 
+                  YRI minv:    -0.005                Batwa maxv:     0.010
+           eigenvector_5_Batwa_Juhoansi_      0.803486 
+                eigenvector_5_Batwa_YRI_      0.658894 
+             eigenvector_5_Juhoansi_YRI_      0.640364 
+eigenvector 6:means
+            Juhoansi     -0.002
+                 YRI     -0.002
+               Batwa      0.005
+                  eigenvector_6_overall_      0.975078 
+             Juhoansi minv:    -0.002                Batwa maxv:     0.005
+           eigenvector_6_Batwa_Juhoansi_      0.893856 
+                eigenvector_6_Batwa_YRI_      0.856947 
+             eigenvector_6_Juhoansi_YRI_      0.942547 
+eigenvector 7:means
+                 YRI     -0.000
+               Batwa     -0.000
+            Juhoansi      0.001
+                  eigenvector_7_overall_      0.999655 
+                  YRI minv:    -0.000             Juhoansi maxv:     0.001
+           eigenvector_7_Batwa_Juhoansi_       0.93518 
+                eigenvector_7_Batwa_YRI_             1 
+             eigenvector_7_Juhoansi_YRI_      0.983217 
+eigenvector 8:means
+               Batwa     -0.001
+                 YRI      0.000
+            Juhoansi      0.001
+                  eigenvector_8_overall_      0.998766 
+                Batwa minv:    -0.001             Juhoansi maxv:     0.001
+           eigenvector_8_Batwa_Juhoansi_      0.905548 
+                eigenvector_8_Batwa_YRI_      0.977588 
+             eigenvector_8_Juhoansi_YRI_      0.983079 
+eigenvector 9:means
+               Batwa     -0.002
+            Juhoansi     -0.000
+                 YRI      0.001
+                  eigenvector_9_overall_       0.99513 
+                Batwa minv:    -0.002                  YRI maxv:     0.001
+           eigenvector_9_Batwa_Juhoansi_      0.816724 
+                eigenvector_9_Batwa_YRI_      0.930662 
+             eigenvector_9_Juhoansi_YRI_      0.974672 
+eigenvector 10:means
+                 YRI     -0.001
+            Juhoansi     -0.000
+               Batwa      0.002
+                 eigenvector_10_overall_      0.996349 
+                  YRI minv:    -0.001                Batwa maxv:     0.002
+          eigenvector_10_Batwa_Juhoansi_      0.876284 
+               eigenvector_10_Batwa_YRI_      0.939964 
+            eigenvector_10_Juhoansi_YRI_      0.981586 
+
+## Statistical significance of differences beween populations:
+                                pop1                  pop2      chisq          p-value   |pop1|   |pop2|
+popdifference:                 Batwa              Juhoansi       266.610   1.73289e-51      23      17
+popdifference:                 Batwa                   YRI       326.917   3.12586e-64      23      36
+popdifference:              Juhoansi                   YRI       559.585  7.96231e-114      17      36
+
+eigbestsnp    1          2-235707172  2    235707172     4.322
+eigbestsnp    1            8-9154394  8      9154394     4.313
+eigbestsnp    1          13-55468442 13     55468442     4.175
+eigbestsnp    1           9-23787897  9     23787897     4.160
+eigbestsnp    1           16-6388639 16      6388639     4.155
+eigbestsnp    1          6-129551233  6    129551233     4.142
+eigbestsnp    1          18-12582788 18     12582788     4.119
+eigbestsnp    1          15-25036455 15     25036455     4.099
+eigbestsnp    1          20-44914262 20     44914262     4.037
+eigbestsnp    1          14-76624547 14     76624547     4.028
+eigbestsnp    2         13-113897320 13    113897320     4.750
+eigbestsnp    2           17-9102169 17      9102169     4.529
+eigbestsnp    2           7-21982300  7     21982300     4.369
+eigbestsnp    2          1-193942375  1    193942375     4.360
+eigbestsnp    2          2-235335455  2    235335455     4.346
+eigbestsnp    2          11-84547595 11     84547595     4.290
+eigbestsnp    2          3-106219745  3    106219745     4.290
+eigbestsnp    2           3-53234994  3     53234994     4.264
+eigbestsnp    2            2-9905368  2      9905368     4.225
+eigbestsnp    2          10-54563015 10     54563015     4.166
+eigbestsnp    3          2-110879561  2    110879561     9.395
+eigbestsnp    3          4-108383641  4    108383641     9.395
+eigbestsnp    3           1-19862411  1     19862411     8.695
+eigbestsnp    3          2-134152610  2    134152610     7.963
+eigbestsnp    3          4-134298899  4    134298899     7.364
+eigbestsnp    3         11-127058947 11    127058947     7.235
+eigbestsnp    3          9-131737339  9    131737339     6.781
+eigbestsnp    3          21-31264797 21     31264797     6.642
+eigbestsnp    3           1-10974329  1     10974329     6.621
+eigbestsnp    3           1-18483918  1     18483918     6.621
+eigbestsnp    4          10-76617857 10     76617857     5.908
+eigbestsnp    4          2-110879561  2    110879561     5.617
+eigbestsnp    4          4-108383641  4    108383641     5.617
+eigbestsnp    4          1-220539533  1    220539533     5.487
+eigbestsnp    4          4-134298899  4    134298899     5.264
+eigbestsnp    4          4-155826061  4    155826061     5.188
+eigbestsnp    4          10-81701722 10     81701722     5.174
+eigbestsnp    4           1-48105228  1     48105228     5.017
+eigbestsnp    4           3-70560258  3     70560258     4.990
+eigbestsnp    4          13-99474763 13     99474763     4.876
+eigbestsnp    5          14-89300567 14     89300567     5.408
+eigbestsnp    5          13-87836852 13     87836852     5.303
+eigbestsnp    5          2-179071826  2    179071826     5.198
+eigbestsnp    5          4-130376388  4    130376388     5.167
+eigbestsnp    5         12-100083169 12    100083169     5.105
+eigbestsnp    5          6-154237937  6    154237937     5.080
+eigbestsnp    5          5-117901357  5    117901357     4.998
+eigbestsnp    5          14-92748200 14     92748200     4.991
+eigbestsnp    5           1-37003273  1     37003273     4.956
+eigbestsnp    5          22-29498118 22     29498118     4.879
+eigbestsnp    6           5-87809261  5     87809261     4.949
+eigbestsnp    6         12-128730764 12    128730764     4.893
+eigbestsnp    6           8-17269633  8     17269633     4.857
+eigbestsnp    6           1-58794017  1     58794017     4.826
+eigbestsnp    6           9-25616984  9     25616984     4.810
+eigbestsnp    6           1-30878285  1     30878285     4.806
+eigbestsnp    6          18-53729156 18     53729156     4.803
+eigbestsnp    6           10-3067312 10      3067312     4.625
+eigbestsnp    6           1-39065974  1     39065974     4.599
+eigbestsnp    6         12-131715842 12    131715842     4.595
+eigbestsnp    7          5-170376149  5    170376149     6.506
+eigbestsnp    7           7-82665798  7     82665798     5.730
+eigbestsnp    7           4-47322219  4     47322219     5.728
+eigbestsnp    7           2-45457111  2     45457111     5.249
+eigbestsnp    7          11-42508817 11     42508817     5.157
+eigbestsnp    7           6-98638360  6     98638360     4.905
+eigbestsnp    7          12-95105401 12     95105401     4.880
+eigbestsnp    7          1-114713359  1    114713359     4.754
+eigbestsnp    7          14-99098792 14     99098792     4.710
+eigbestsnp    7           5-16569071  5     16569071     4.647
+eigbestsnp    8           4-48708512  4     48708512     5.330
+eigbestsnp    8          18-72047318 18     72047318     5.211
+eigbestsnp    8           1-92977275  1     92977275     5.128
+eigbestsnp    8           4-33644966  4     33644966     5.098
+eigbestsnp    8          7-143054309  7    143054309     5.084
+eigbestsnp    8           4-26229299  4     26229299     5.060
+eigbestsnp    8           1-45576594  1     45576594     4.964
+eigbestsnp    8           2-80744297  2     80744297     4.964
+eigbestsnp    8           4-25930928  4     25930928     4.931
+eigbestsnp    8            9-7236712  9      7236712     4.909
+eigbestsnp    9            5-6265471  5      6265471     5.661
+eigbestsnp    9           6-41452996  6     41452996     5.175
+eigbestsnp    9          15-83245384 15     83245384     4.654
+eigbestsnp    9          11-85681389 11     85681389     4.647
+eigbestsnp    9           8-19200609  8     19200609     4.644
+eigbestsnp    9           9-36932412  9     36932412     4.592
+eigbestsnp    9           2-30026965  2     30026965     4.428
+eigbestsnp    9          10-26764577 10     26764577     4.385
+eigbestsnp    9          4-139396693  4    139396693     4.349
+eigbestsnp    9          5-119064355  5    119064355     4.340
+eigbestsnp   10           4-80394763  4     80394763     4.985
+eigbestsnp   10           5-56751453  5     56751453     4.829
+eigbestsnp   10          2-138394723  2    138394723     4.684
+eigbestsnp   10           2-99487972  2     99487972     4.533
+eigbestsnp   10           17-9098228 17      9098228     4.514
+eigbestsnp   10         14-104222892 14    104222892     4.494
+eigbestsnp   10          5-165597785  5    165597785     4.294
+eigbestsnp   10           3-73545291  3     73545291     4.278
+eigbestsnp   10           9-38335032  9     38335032     4.275
+eigbestsnp   10           1-58918842  1     58918842     4.267
+##end of smartpca run
