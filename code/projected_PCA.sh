@@ -34,3 +34,36 @@ module load bioinfo-tools eigensoft/7.2.0
 root=zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp
 smartpca -p ${root}_killr20.2_popsize36_B_K_ZambiaBantusp_projected.par > ${root}_killr20.2_popsize36_B_K_ZambiaBantusp_projected.smartpca.logfile
 exit 0") | sbatch -p core -n 1 -t 10:0  -A p2018003 -J PC_${root}_B_K_ZambiaBantusp_projected -o PC_${root}_B_K_ZambiaBantusp_projected.output -e PC_${root}_B_K_ZambiaBantusp_projected.output --mail-user gwenna.breton@ebc.uu.se --mail-type=FAIL,END
+
+# I plotted the results (cf plot_PCA_projected.R in the same folder). Sample Batwa_04 is an outlier and drives several of the axes. I will perform the PCA without it again.
+
+###
+# PCA with Batwa_04 (outlier) removed
+###
+root=zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex
+grep -e YRI -e Batwa -e Juhoansi -e Bangweulu -e Kafue -e Zambia ${root}.fam | grep -v "Batwa_04" > ${root}_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp_minus-Batwa04
+newroot=${root}_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp_minus-Batwa04
+plink --bfile ${root} --keep ${newroot} --make-bed --out ${newroot}
+
+root=zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp_minus-Batwa04
+cut -d" " -f1-5 ${root}.fam >file1a
+cut -d" " -f1 ${root}.fam >file2a
+touch fileComb
+paste file1a file2a >fileComb
+sed "s/\t/ /g" fileComb > ${root}.pedind
+rm file1a; rm file2a; rm fileComb
+
+cp /crex/proj/snic2020-2-10/uppstore2018150/private/scripts/parfile.par temppar
+sed "s/infile/${root}/g" temppar |   sed "s/outfile/${root}_killr20.2_popsize36_B_K_ZambiaBantusp_projected/g"  | sed "s/popsizelimit:     20/popsizelimit:     36/g" | sed "s/killr2:           YES/killr2:           YES/g"   > ${root}_killr20.2_popsize36_B_K_ZambiaBantusp_projected.par
+echo -e 'poplistname:\tYRI_Batwa-Uganda_Juhoansi_poplist' >> ${root}_killr20.2_popsize36_B_K_ZambiaBantusp_projected.par
+rm temppar
+
+(echo '#!/bin/bash -l'
+echo "
+cd /crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020
+module load bioinfo-tools eigensoft/7.2.0
+root=zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex_YRI_Batwa-Uganda_Juhoansi_B_Z_ZambiaBantusp_minus-Batwa04
+smartpca -p ${root}_killr20.2_popsize36_B_K_ZambiaBantusp_projected.par > ${root}_killr20.2_popsize36_B_K_ZambiaBantusp_projected.smartpca.logfile
+exit 0") | sbatch -p core -n 1 -t 10:0  -A p2018003 -J PC_${root}_B_K_ZambiaBantusp_projected -o PC_${root}_B_K_ZambiaBantusp_projected.output -e PC_${root}_B_K_ZambiaBantusp_projected.output --mail-user gwenna.breton@ebc.uu.se --mail-type=FAIL,END
+
+
