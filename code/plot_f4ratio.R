@@ -37,3 +37,68 @@ axis(side=1)
 abline(v=0,lty=2)
 axis(side=2,at=c(1:nrow(data2r)),labels=c("BaTwa (Kafue)","SE Bantu-speakers","Sotho","Zulu","BaTwa (Bangweulu)","Herero","Nzebi","Nzime","Tonga","Bemba","Igbo","Lozi","Mandinka","Luhya","Ba.Kiga"),las=2,tick=FALSE)
 dev.off()
+
+###
+# Test correlation with previous results
+###
+
+data <- read.table(file="f4ratio_eRHGadmixture_Batwa_anc3apes",header=TRUE) #This is a file created manually from the "logfile" output.
+admixture = 1-data$alpha
+data2 <- data.frame("Target"=data$Target, admixture, "std.err"=data$std.err)
+data2r_Batwa <- data2[order(data2$admixture),]
+
+data <- read.table(file="../../December2020/f4ratio/f4ratio_wRHGadmixture_anc3apes",header=TRUE) #This is a file created manually from the "logfile" output.
+admixture = 1-data$alpha
+data2 <- data.frame("Target"=data$Target, admixture, "std.err"=data$std.err)
+data2r_Baka <- data2[order(data2$admixture),]
+
+data <- read.table(file="../../December2020/f4ratio/f4ratio_KSadmixture_anc3apes",header=TRUE) #This is a file created manually from the "logfile" output.
+admixture = 1-data$alpha
+data2 <- data.frame("Target"=data$Target, admixture, "std.err"=data$std.err)
+data2r_KS <- data2[order(data2$admixture),]
+
+data <- read.table(file="../../December2020/f4ratio/f4ratio_eHGadmixture_anc3apes",header=TRUE) #This is a file created manually from the "logfile" output.
+admixture = 1-data$alpha
+data2 <- data.frame("Target"=data$Target, admixture, "std.err"=data$std.err)
+data2r_Hadza <- data2[order(data2$admixture),]
+
+data <- read.table(file="f4ratio_eHGadmixture_Sabue_anc3apes",header=TRUE)
+admixture = 1-data$alpha
+data2 <- data.frame("Target"=data$Target, admixture, "std.err"=data$std.err)
+data2r_Sabue <- data2[order(data2$admixture),]
+
+#Correlation between eRHG and wRHG admixture
+cor.test(data2r_Baka$admixture, data2r_Batwa$admixture, method=c("spearman")) # S = 1.2434e-13, p-value < 2.2e-16, rho = 1
+
+#Correlation between eRHG and KS admixture
+cor.test(data2r_KS$admixture, data2r_Batwa$admixture, method=c("spearman")) # S = 1.2434e-13, p-value < 2.2e-16, rho = 1
+
+#Correlation between Hadza and Sabue
+cor.test(data2r_Hadza$admixture, data2r_Sabue$admixture, method=c("spearman")) # S = 1.2434e-13, p-value < 2.2e-16, rho = 1
+
+#Correlation between eRHG and Sabue
+cor.test(data2r_Batwa$admixture, rev(data2r_Sabue$admixture), method=c("spearman")) # S = 1120, p-value < 2.2e-16, rho = -1
+#Here I can take rev() because the population order is the same but reverted between the two arrays.
+
+###
+# Estimated admixture for the Zambian populations
+###
+
+round(data2r_Batwa$admixture,3)[c(4,6,7,11,15)]
+#Lozi: 0.010
+#Bemba: 0.08
+#Tonga: 0.138
+#BaTwa Bangweulu: 0.320
+#BaTwa Kafue: 0.694
+
+round(data2r_Baka$admixture,3)[c(4,6,7,11,15)]
+#0.006 0.049 0.085 0.197 0.427
+
+round(data2r_KS$admixture,3)[c(4,6,7,11,15)]
+#0.003 0.024 0.042 0.098 0.212
+
+round(data2r_Hadza$admixture,3)[c(12,10,9,5,1)]
+#-0.018 -0.149 -0.259 -0.599 -1.301
+
+round(data2r_Sabue$admixture,3)[c(12,10,9,5,1)]
+#-0.012 -0.103 -0.179 -0.415 -0.901
