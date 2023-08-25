@@ -18,4 +18,20 @@ plink --bfile $prefix --keep-fam $pop --make-bed --out July2023_YRI-Juhoansi-Bak
 # YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue
 outfolder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/kafue
 pop=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue
-plink --bfile $folder/$prefix --keep-fam $folder/$pop --make-bed --out ${outfolder}/July2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue
+plink --bfile $folder/$prefix --keep-fam $pop --make-bed --out ${outfolder}/July2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue
+
+# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bemba
+outfolder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/bemba
+pop=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bemba
+plink --bfile $folder/$prefix --keep-fam $pop --make-bed --out ${outfolder}/July2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bemba
+
+# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Lozi
+outfolder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/lozi
+pop=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Lozi
+plink --bfile $folder/$prefix --keep-fam $pop --make-bed --out ${outfolder}/July2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Lozi
+
+# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Tonga
+outfolder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/tonga
+pop=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Tonga
+plink --bfile $folder/$prefix --keep-fam $pop --make-bed --out ${outfolder}/July2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Tonga
+
