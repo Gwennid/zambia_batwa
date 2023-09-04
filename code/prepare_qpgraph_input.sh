@@ -43,24 +43,23 @@ plink --bfile $folder/$prefix --keep-fam $pop --make-bed --out ${outfolder}/July
 # Step 1: extract the sites present in the input from Denisovan's VCF
 #I ran chr22 outside the loop to test the code.
 cd /crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/Denisovan/log
-(echo '#!/bin/bash -l'
-echo "
+(echo '#!/bin/bash -l
 folder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020
 prefix=zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex
 module load bioinfo-tools plink/1.90b4.9
 module load bioinfo-tools bcftools/1.17
 cd $folder
 
-for chr in {1..21}; do
+for chr in {1..22}; do
 chrbim=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/Denisovan/zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex_${chr}
 chrpositions=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/Denisovan/positions_${chr}
 denisovan=/crex/proj/snic2020-2-10/private/Analyses/Matjes_River/per_chr_vcfs/GATK_called_vcfs/Denis_emitall_Denisova_${chr}.vcf.gz
 output=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/Denisovan/Denis_emitall_Denisova_${chr}_subset_zbatwa10_zbantu9_plus_comp.vcf.gz
-plink --bfile $folder/$prefix --chr $chr --make-just-bim --out ${chrbim}
-cut -f1,4 $chrbim.bim > $chrpositions
+plink --bfile ${folder}/${prefix} --chr ${chr} --make-just-bim --out ${chrbim}
+cut -f1,4 ${chrbim}.bim > ${chrpositions}
 bcftools view -R ${chrpositions} -Oz -o ${output} ${denisovan}
 done
-exit 0") | sbatch -p core -n 1 -t 24:0:0 -A p2018003 -J subset_Denisova -o subset_Denisova.output -e subset_Denisova.output --mail-user gwenna.breton@ebc.uu.se --mail-type=FAIL
+exit 0') | sbatch -p core -n 1 -t 24:0:0 -A p2018003 -J subset_Denisova -o subset_Denisova.output -e subset_Denisova.output --mail-user gwenna.breton@ebc.uu.se --mail-type=FAIL
 #Submitted batch job 40864847
 
 # Step 2: make a single VCF out of the 22; convert it to plink fileset.
