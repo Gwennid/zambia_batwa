@@ -96,13 +96,16 @@ plink --bfile ${prefix} --exclude ATCGlist --make-bed --out ${prefix}_1
 
 ## Merge with the main dataset
 #Obs! Maybe I should have extracted the positions from a different fileset, from which the fake is not removed... Look into that.
-folder=/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_March2020/Comparative_data/Omni2.5/1KGP_2015
-plink --bfile zbatwa10_zbantu9_Schlebusch2012_4 --bmerge ${folder}/1000Genomes_final_onlyAutosomal_onlyCEU_CHB_YRI_LWK_MKK_8.bed ${folder}/1000Genomes_final_onlyAutosomal_only>
-folder2=/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/Comparative_data/Omni2.5/1KGP_2015
-plink --bfile ${folder}/1000Genomes_final_onlyAutosomal_onlyCEU_CHB_YRI_LWK_MKK_8 --flip zbatwa10_zbantu9_Schlebusch2012_1KGP173-merge.missnp --make-bed --out ${folder2}/1000G>
-plink --bfile zbatwa10_zbantu9_Schlebusch2012_4 --bmerge ${folder2}/1000Genomes_final_onlyAutosomal_onlyCEU_CHB_YRI_LWK_MKK_8f.bed ${folder2}/1000Genomes_final_onlyAutosomal_o>
-plink --bfile ${folder2}/1000Genomes_final_onlyAutosomal_onlyCEU_CHB_YRI_LWK_MKK_8f --exclude zbatwa10_zbantu9_Schlebusch2012_1KGP173_2-merge.missnp --make-bed --out ${folder2>
-plink --bfile zbatwa10_zbantu9_Schlebusch2012_4 --bmerge ${folder2}/1000Genomes_final_onlyAutosomal_onlyCEU_CHB_YRI_LWK_MKK_8fe.bed ${folder2}/1000Genomes_final_onlyAutosomal_>
+#I will merge with ../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2.bim (most recent file that still has fake individuals)
+folder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/
+base=zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2
+denisovan=Denisovan/Denis_emitall_Denisova_1-22_subset_zbatwa10_zbantu9_plus_comp_1
+plink --bfile ${folder}${base} --bmerge ${folder}${denisovan}.bed ${folder}${denisovan}.bim ${folder}${denisovan}.fam --make-bed --out ${folder}Denisovan/${base}_denisovan #168445 variants with 3+ alleles present.
+plink --bfile ${folder}${denisovan} --flip ${folder}Denisovan/${base}_denisovan-merge.missnp --make-bed --out ${folder}${denisovan}f
+plink --bfile ${folder}${base} --bmerge ${folder}${denisovan}f.bed ${folder}${denisovan}f.bim ${folder}${denisovan}f.fam --make-bed --out ${folder}Denisovan/${base}_denisovan_2 #80 variants with 3+ alleles present.
+plink --bfile ${folder}${denisovan}f --exclude ${folder}Denisovan/${base}_denisovan_2-merge.missnp --make-bed --out ${folder}${denisovan}fe
+plink --bfile ${folder}${base} --bmerge ${folder}${denisovan}fe.bed ${folder}${denisovan}fe.bim ${folder}${denisovan}fe.fam --make-bed --out ${folder}Denisovan/${base}_denisovan_3
+#Error about sex?!
 
 [gwennabr@r161 Denisovan]$ grep fake ../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc*.fam
 ../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2.fam:fake1 fake1 0 0 0 1
