@@ -11,7 +11,8 @@ for (m in 1:3){
   best.s=.Machine$integer.max
   for (i in 1:1000){
     set.seed(i) #keep track of random seed, in order to reproduce models
-    opt_results = find_graphs(f2, numadmix = m, stop_gen = 10000, stop_gen2 = 30, plusminus_generations = 10) 
+    opt_results = find_graphs(f2, numadmix = m, stop_gen = 10000, stop_gen2 = 30, plusminus_generations = 10)
+    #opt_results = find_graphs(f2, numadmix = m, stop_gen = 10000, stop_gen2 = 30, plusminus_generations = 10, outpop = 'Denisovan')
     winner = opt_results %>% slice_min(score, with_ties = FALSE)
     s=winner$score[[1]]
     if (s<=best.s*1.1){ 
