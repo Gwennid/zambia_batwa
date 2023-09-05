@@ -139,6 +139,9 @@ dev.off()
 #With a single iteration, it seems like m=2 is not such a good fit as it was for the runs without an outgroup!
 
 # Step 6: scale-up (1000 repeats of m=1, 2 or 3)
+#I made the scripts (for BaTwa Bangweulu only so far) in /crex/proj/snic2020-2-10/uppstore2018150/private/scripts/find_graphs/
+#Submit the job:
+sbatch -A p2018003 -p core -n 1 -t 10-00:00:00 --mail-user gwenna.breton@ebc.uu.se --mail-type=FAIL runRscript_explore_admixture_graphs_denisovan_bangweulu.sh
 
 
 
