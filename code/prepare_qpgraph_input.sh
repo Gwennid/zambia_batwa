@@ -95,8 +95,7 @@ grep -P "\tG\tC" ${prefix}.bim >> ATCGlist #77 items. It's a bit strange, I woul
 plink --bfile ${prefix} --exclude ATCGlist --make-bed --out ${prefix}_1
 
 ## Merge with the main dataset
-#Obs! Maybe I should have extracted the positions from a different fileset, from which the fake is not removed... Look into that.
-#I will merge with ../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2.bim (most recent file that still has fake individuals)
+#I will merge with ../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2.bim (most recent file that still has fake individuals; all the files, with/out fake, have the same number of variants)
 folder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/
 base=zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2
 denisovan=Denisovan/Denis_emitall_Denisova_1-22_subset_zbatwa10_zbantu9_plus_comp_1
@@ -104,24 +103,29 @@ plink --bfile ${folder}${base} --bmerge ${folder}${denisovan}.bed ${folder}${den
 plink --bfile ${folder}${denisovan} --flip ${folder}Denisovan/${base}_denisovan-merge.missnp --make-bed --out ${folder}${denisovan}f
 plink --bfile ${folder}${base} --bmerge ${folder}${denisovan}f.bed ${folder}${denisovan}f.bim ${folder}${denisovan}f.fam --make-bed --out ${folder}Denisovan/${base}_denisovan_2 #80 variants with 3+ alleles present.
 plink --bfile ${folder}${denisovan}f --exclude ${folder}Denisovan/${base}_denisovan_2-merge.missnp --make-bed --out ${folder}${denisovan}fe
-plink --bfile ${folder}${base} --bmerge ${folder}${denisovan}fe.bed ${folder}${denisovan}fe.bim ${folder}${denisovan}fe.fam --make-bed --out ${folder}Denisovan/${base}_denisovan_3
-#Error about sex?!
+plink --bfile ${folder}${base} --bmerge ${folder}${denisovan}fe.bed ${folder}${denisovan}fe.bim ${folder}${denisovan}fe.fam --allow-no-sex --make-bed --out ${folder}Denisovan/${base}_denisovan_3 #337051 variants and 979 people pass filters and QC.
 
-[gwennabr@r161 Denisovan]$ grep fake ../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc*.fam
-../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2.fam:fake1 fake1 0 0 0 1
-../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2.fam:fakeA fakeA 0 0 0 1
-../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2.fam:fakeInd fakeInd 0 0 0 1
-../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc-merge.fam:fake1        fake1      0       0       0       -9
-../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc-merge.fam:fakeA        fakeA      0       0       0       -9
-../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc-merge.fam:fakeInd      fakeInd    0       0       0       -9
-../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc.fam:fake1 fake1 0 0 0 -9
-../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc.fam:fakeInd fakeInd 0 0 0 -9
-../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapancf.fam:fake1 fake1 0 0 0 -9
-../zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapancf.fam:fakeInd fakeInd 0 0 0 -9
-
+## Remove the fake individuals
+grep fake ${folder}Denisovan/${base}_denisovan_3.fam > ${folder}Denisovan/${base}_denisovan_3_fake
+plink --bfile ${folder}Denisovan/${base}_denisovan_3 --remove ${folder}Denisovan/${base}_denisovan_3_fake --allow-no-sex --make-bed --out ${folder}Denisovan/${base}_denisovan_3fex
 
 # Step 4: extract the five modern populations + Denisovan
+# Inputs
+folder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/Denisovan
+prefix=zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2_denisovan_3fex
+
+# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bangweulu-Denisovan
+cd $folder
+pop=${folder}/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bangweulu-Denisovan
+plink --bfile $prefix --keep-fam $pop --make-bed --out September2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bangweulu-Denisovan
 
 # Step 5: check that I can open this fileset, and that I can search for an admixture graph with it
 
 # Step 6: scale-up (1000 repeats of m=1, 2 or 3)
+
+
+
+
+
+
+
