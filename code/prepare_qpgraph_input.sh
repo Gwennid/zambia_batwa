@@ -120,6 +120,23 @@ pop=${folder}/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bangweulu-Denisovan
 plink --bfile $prefix --keep-fam $pop --make-bed --out September2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bangweulu-Denisovan
 
 # Step 5: check that I can open this fileset, and that I can search for an admixture graph with it
+module load bioinfo-tools
+module load R_packages/4.1.1
+R
+library(admixtools, lib.loc='/domus/h1/gwennabr/R/x86_64-redhat-linux-gnu-library/4.1.1/')
+library(dplyr)
+#setwd("/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph")
+setwd("/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/Denisovan")
+f2=f2_from_geno("September2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bangweulu-Denisovan",maxmiss=0.15)
+m=1 #or 2 or 3
+opt_results = find_graphs(f2, numadmix = m, stop_gen = 10000, stop_gen2 = 30, plusminus_generations = 10, outpop = 'Denisovan')
+winner = opt_results %>% slice_min(score, with_ties = FALSE)
+s=winner$score[[1]]
+pdf(paste('graph.Bangweulu.test',m,s,'pdf',sep='.'))
+print(plot_graph(winner$edges[[1]]))
+dev.off()
+
+#With a single iteration, it seems like m=2 is not such a good fit as it was for the runs without an outgroup!
 
 # Step 6: scale-up (1000 repeats of m=1, 2 or 3)
 
