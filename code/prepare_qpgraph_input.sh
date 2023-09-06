@@ -41,7 +41,6 @@ plink --bfile $folder/$prefix --keep-fam $pop --make-bed --out ${outfolder}/July
 # VCFs (all sites) for Denisovan can be found here: /crex/proj/snic2020-2-10/private/Analyses/Matjes_River/per_chr_vcfs/GATK_called_vcfs/Denis_emitall_Denisova_*.vcf.gz (as shared by Per Sjödin)
 
 # Step 1: extract the sites present in the input from Denisovan's VCF
-#I ran chr22 outside the loop to test the code.
 cd /crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/Denisovan/log
 (echo '#!/bin/bash -l
 folder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020
