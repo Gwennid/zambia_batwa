@@ -145,27 +145,33 @@ sbatch -A p2018003 -p core -n 1 -t 10-00:00:00 --mail-user gwenna.breton@ebc.uu.
 #
 # Prepare the other four Zambian populations with Denisovan
 #
-#TODO the code below needs to be edited.
+folder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/Denisovan
+prefix=zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2_denisovan_3fex
+cd $folder
 
-# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue
-outfolder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/kafue
-pop=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue
-plink --bfile $folder/$prefix --keep-fam $pop --make-bed --out ${outfolder}/July2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue
+# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue-Denisovan
+pop=${folder}/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue-Denisovan
+plink --bfile $prefix --keep-fam $pop --make-bed --out September2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue-Denisovan #149 people
 
-# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bemba
-outfolder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/bemba
-pop=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bemba
-plink --bfile $folder/$prefix --keep-fam $pop --make-bed --out ${outfolder}/July2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bemba
+# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bemba-Denisovan
+pop=${folder}/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bemba-Denisovan
+plink --bfile $prefix --keep-fam $pop --make-bed --out September2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Bemba-Denisovan #129 people
 
-# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Lozi
-outfolder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/lozi
-pop=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Lozi
-plink --bfile $folder/$prefix --keep-fam $pop --make-bed --out ${outfolder}/July2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Lozi
+# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Lozi-Denisovan
+pop=${folder}/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Lozi-Denisovan
+plink --bfile $prefix --keep-fam $pop --make-bed --out September2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Lozi-Denisovan #137 people
 
-# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Tonga
-outfolder=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/tonga
-pop=/crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Tonga
-plink --bfile $folder/$prefix --keep-fam $pop --make-bed --out ${outfolder}/July2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Tonga
+# YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Tonga-Denisovan
+pop=${folder}/YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Tonga-Denisovan
+plink --bfile $prefix --keep-fam $pop --make-bed --out September2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Tonga-Denisovan #125 people
+
+# Run find_graph
+# I decided (2023-09-14) to start with 100 repeats at m=1, 2 or 3, as jobs have been slow and have failed, and it would be good to have a complete result of some sort.
+mkdir -p /crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/withdenisovan/kafue/20230914/plots/
+cp ${folder}/September2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue-Denisovan.b* /crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/withdenisovan/kafue/
+cp ${folder}/September2023_YRI-Juhoansi-Baka_Cam-Tanzania_Hadza-Kafue-Denisovan.fam /crex/proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020/tmp_20230818_findgraph/withdenisovan/kafue/
+sbatch -A p2018003 -p core -n 1 -t 10-00:00:00 --mail-user gwenna.breton@ebc.uu.se --mail-type=FAIL runRscript_explore_admixture_graphs_denisovan_kafue_n100.sh
+#Waiting a bit before preparing and submitting the jobs for the other combinations of populations.
 
 
 
