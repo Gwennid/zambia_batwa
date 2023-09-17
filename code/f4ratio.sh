@@ -18,3 +18,8 @@ qpF4ratio -p par.f4ratio.20230703_eRHGadmixture > logfile.20230703_eRHGadmixture
 sed 's/Tanzania_Hadza/Ethiopia_Sabue/g' < 20200613_popfile_eHGadmixture > 20230703_popfile_eHGadmixture
 sed 's/example/zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex/g' < /crex/proj/snic2020-2-10/uppstore2018150/private/results/f4ratiotest/par.f4ratio | sed 's/POPFILE/20230703_popfile_eHGadmixture/g' > par.f4ratio.20230703_eHGadmixture
 qpF4ratio -p par.f4ratio.20230703_eHGadmixture > logfile.20230703_eHGadmixture
+
+# 2023-09-17
+# Switching "main ancestry proxy" and "admixture source"
+# Cf the files with "20230917" in the file names
+
