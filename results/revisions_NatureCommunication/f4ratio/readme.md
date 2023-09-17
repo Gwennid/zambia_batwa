@@ -12,7 +12,7 @@ rm tmp
 
 The resulting files are `results/revisions_NatureCommunication/f4ratio/f4ratio_*_anc3apes`.
 
-The ratio were plotted with R (code: `main/code/plot_f4ratio.R`). The resulting figure is `main/results/revisions_NatureCommunication/f4ratio/20230710_f4ratio_test_rRHG-Batwa_eHG-Sabue_ancestry_in15pop20230703.pdf`.
+The ratio were plotted with R (code: `main/code/plot_f4ratio.R`).
 
 Correlations between estimates made with different source populations were calculated in `main/code/plot_f4ratio.R`.
 
