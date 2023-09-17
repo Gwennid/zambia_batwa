@@ -1,0 +1,16 @@
+Target	Source	alpha	std.err	Z
+Bangweulu	Ethiopia_Sabue	-0.414899	0.039813	-10.421
+Kafue	Ethiopia_Sabue	-0.900871	0.060727	-14.835
+Zambia_Bemba	Ethiopia_Sabue	-0.103373	0.031543	-3.277
+Zambia_Lozi	Ethiopia_Sabue	-0.012337	0.027526	-0.448
+Zambia_TongaZam	Ethiopia_Sabue	-0.179299	0.034682	-5.170
+Bakiga	Ethiopia_Sabue	0.629962	0.032780	19.218
+Nzebi_Gab	Ethiopia_Sabue	-0.376881	0.036009	-10.466
+Nzime_Cam	Ethiopia_Sabue	-0.296019	0.031919	-9.274
+SEBantu	Ethiopia_Sabue	-0.866789	0.060427	-14.344
+Sotho	Ethiopia_Sabue	-0.864923	0.056757	-15.239
+SWBantu	Ethiopia_Sabue	-0.412449	0.046076	-8.951
+Zulu	Ethiopia_Sabue	-0.723314	0.052806	-13.698
+Igbo	Ethiopia_Sabue	-0.073619	0.022278	-3.305
+LWK	Ethiopia_Sabue	0.333007	0.025598	13.009
+Mandinka	Ethiopia_Sabue	0.258576	0.024260	10.659

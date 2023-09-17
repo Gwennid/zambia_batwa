@@ -1,0 +1,64 @@
+qpF4ratio: parameter file: par.f4ratio.20230917_eRHGadmixture
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.geno
+snpname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.snp
+indivname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.indiv
+popfilename: 20230917_popfile_eRHGadmixture
+## qpF4ratio version: 300
+nplist: 30
+  0                  CHB   36
+  1            anc_2apes    1
+  2            Bangweulu   36
+  3                  YRI   36
+  4                Batwa   23
+  5                Kafue   33
+  6         Zambia_Bemba   13
+  7          Zambia_Lozi   21
+  8      Zambia_TongaZam    9
+  9               Bakiga   33
+ 10            Nzebi_Gab   20
+ 11            Nzime_Cam   36
+ 12              SEBantu   19
+ 13                Sotho   36
+ 14              SWBantu    8
+ 15                 Zulu   36
+ 16                 Igbo   36
+ 17                  LWK   36
+ 18             Mandinka   36
+ 19            anc_3apes    1
+jackknife block size:     0.050
+snps: 337051  indivs: 505
+number of blocks for block jackknife: 547
+                                                                                                           alpha     std. err  Z (null=0)
+ result:        CHB  anc_2apes  Bangweulu        YRI  :        CHB  anc_2apes      Batwa        YRI     0.319628     0.020331     15.721
+ result:        CHB  anc_2apes      Kafue        YRI  :        CHB  anc_2apes      Batwa        YRI     0.693250     0.022415     30.928
+ result:        CHB  anc_2apes Zambia_Bemba        YRI  :        CHB  anc_2apes      Batwa        YRI     0.075800     0.022035      3.440
+ result:        CHB  anc_2apes Zambia_Lozi        YRI  :        CHB  anc_2apes      Batwa        YRI    -0.002567     0.020614     -0.125
+ result:        CHB  anc_2apes Zambia_TongaZam        YRI  :        CHB  anc_2apes      Batwa        YRI     0.144051     0.023279      6.188
+ result:        CHB  anc_2apes     Bakiga        YRI  :        CHB  anc_2apes      Batwa        YRI    -0.483588     0.031073    -15.563
+ result:        CHB  anc_2apes  Nzebi_Gab        YRI  :        CHB  anc_2apes      Batwa        YRI     0.295374     0.019445     15.191
+ result:        CHB  anc_2apes  Nzime_Cam        YRI  :        CHB  anc_2apes      Batwa        YRI     0.234156     0.016701     14.020
+ result:        CHB  anc_2apes    SEBantu        YRI  :        CHB  anc_2apes      Batwa        YRI     0.659611     0.026248     25.130
+ result:        CHB  anc_2apes      Sotho        YRI  :        CHB  anc_2apes      Batwa        YRI     0.657802     0.023564     27.916
+ result:        CHB  anc_2apes    SWBantu        YRI  :        CHB  anc_2apes      Batwa        YRI     0.315116     0.027257     11.561
+ result:        CHB  anc_2apes       Zulu        YRI  :        CHB  anc_2apes      Batwa        YRI     0.551081     0.021874     25.194
+ result:        CHB  anc_2apes       Igbo        YRI  :        CHB  anc_2apes      Batwa        YRI     0.055227     0.015548      3.552
+ result:        CHB  anc_2apes        LWK        YRI  :        CHB  anc_2apes      Batwa        YRI    -0.254957     0.023463    -10.866
+ result:        CHB  anc_2apes   Mandinka        YRI  :        CHB  anc_2apes      Batwa        YRI    -0.198632     0.020262     -9.803
+ result:        CHB  anc_3apes  Bangweulu        YRI  :        CHB  anc_3apes      Batwa        YRI     0.319966     0.020955     15.269
+ result:        CHB  anc_3apes      Kafue        YRI  :        CHB  anc_3apes      Batwa        YRI     0.694257     0.023388     29.684
+ result:        CHB  anc_3apes Zambia_Bemba        YRI  :        CHB  anc_3apes      Batwa        YRI     0.080020     0.022586      3.543
+ result:        CHB  anc_3apes Zambia_Lozi        YRI  :        CHB  anc_3apes      Batwa        YRI     0.009934     0.020960      0.474
+ result:        CHB  anc_3apes Zambia_TongaZam        YRI  :        CHB  anc_3apes      Batwa        YRI     0.138482     0.023761      5.828
+ result:        CHB  anc_3apes     Bakiga        YRI  :        CHB  anc_3apes      Batwa        YRI    -0.484299     0.032046    -15.113
+ result:        CHB  anc_3apes  Nzebi_Gab        YRI  :        CHB  anc_3apes      Batwa        YRI     0.290610     0.019666     14.777
+ result:        CHB  anc_3apes  Nzime_Cam        YRI  :        CHB  anc_3apes      Batwa        YRI     0.228385     0.017389     13.134
+ result:        CHB  anc_3apes    SEBantu        YRI  :        CHB  anc_3apes      Batwa        YRI     0.667939     0.027276     24.488
+ result:        CHB  anc_3apes      Sotho        YRI  :        CHB  anc_3apes      Batwa        YRI     0.666404     0.024812     26.858
+ result:        CHB  anc_3apes    SWBantu        YRI  :        CHB  anc_3apes      Batwa        YRI     0.318084     0.027831     11.429
+ result:        CHB  anc_3apes       Zulu        YRI  :        CHB  anc_3apes      Batwa        YRI     0.557486     0.023154     24.077
+ result:        CHB  anc_3apes       Igbo        YRI  :        CHB  anc_3apes      Batwa        YRI     0.057007     0.015852      3.596
+ result:        CHB  anc_3apes        LWK        YRI  :        CHB  anc_3apes      Batwa        YRI    -0.255826     0.024367    -10.499
+ result:        CHB  anc_3apes   Mandinka        YRI  :        CHB  anc_3apes      Batwa        YRI    -0.198653     0.021705     -9.152
+## end of run

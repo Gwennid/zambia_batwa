@@ -1,0 +1,16 @@
+Target	Source	alpha	std.err	Z
+Bangweulu	Juhoansi	0.097506	0.006499	15.003
+Kafue	Juhoansi	0.211610	0.006048	34.987
+Zambia_Bemba	Juhoansi	0.024346	0.007026	3.465
+Zambia_Lozi	Juhoansi	0.002983	0.006406	0.466
+Zambia_TongaZam	Juhoansi	0.042167	0.007421	5.682
+Bakiga	Juhoansi	-0.147717	0.007579	-19.489
+Nzebi_Gab	Juhoansi	0.088559	0.006059	14.617
+Nzime_Cam	Juhoansi	0.069584	0.005554	12.528
+SEBantu	Juhoansi	0.203605	0.006959	29.256
+Sotho	Juhoansi	0.203143	0.005939	34.204
+SWBantu	Juhoansi	0.096930	0.008528	11.366
+Zulu	Juhoansi	0.169921	0.006395	26.572
+Igbo	Juhoansi	0.017345	0.004932	3.517
+LWK	Juhoansi	-0.078049	0.006429	-12.140
+Mandinka	Juhoansi	-0.060610	0.005938	-10.208

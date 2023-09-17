@@ -1,0 +1,16 @@
+Target	Source	alpha	std.err	Z
+Bangweulu	Tanzania_Hadza	-0.598941	0.069594	-8.606
+Kafue	Tanzania_Hadza	-1.301033	0.115038	-11.310
+Zambia_Bemba	Tanzania_Hadza	-0.149053	0.047298	-3.151
+Zambia_Lozi	Tanzania_Hadza	-0.017539	0.040003	-0.438
+Zambia_TongaZam	Tanzania_Hadza	-0.258693	0.053645	-4.822
+Bakiga	Tanzania_Hadza	0.910673	0.058059	15.685
+Nzebi_Gab	Tanzania_Hadza	-0.544107	0.062320	-8.731
+Nzime_Cam	Tanzania_Hadza	-0.427371	0.053246	-8.026
+SEBantu	Tanzania_Hadza	-1.252155	0.108367	-11.555
+Sotho	Tanzania_Hadza	-1.249356	0.106169	-11.768
+SWBantu	Tanzania_Hadza	-0.595510	0.076287	-7.806
+Zulu	Tanzania_Hadza	-1.044830	0.093915	-11.125
+Igbo	Tanzania_Hadza	-0.106126	0.033387	-3.179
+LWK	Tanzania_Hadza	0.481561	0.038566	12.487
+Mandinka	Tanzania_Hadza	0.373773	0.037633	9.932

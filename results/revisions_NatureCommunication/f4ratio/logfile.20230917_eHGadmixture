@@ -1,0 +1,64 @@
+qpF4ratio: parameter file: par.f4ratio.20230917_eHGadmixture
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.geno
+snpname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.snp
+indivname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.indiv
+popfilename: 20230917_popfile_eHGadmixture
+## qpF4ratio version: 300
+nplist: 30
+  0                  CHB   36
+  1            anc_2apes    1
+  2            Bangweulu   36
+  3                  YRI   36
+  4       Tanzania_Hadza   26
+  5                Kafue   33
+  6         Zambia_Bemba   13
+  7          Zambia_Lozi   21
+  8      Zambia_TongaZam    9
+  9               Bakiga   33
+ 10            Nzebi_Gab   20
+ 11            Nzime_Cam   36
+ 12              SEBantu   19
+ 13                Sotho   36
+ 14              SWBantu    8
+ 15                 Zulu   36
+ 16                 Igbo   36
+ 17                  LWK   36
+ 18             Mandinka   36
+ 19            anc_3apes    1
+jackknife block size:     0.050
+snps: 337051  indivs: 508
+number of blocks for block jackknife: 547
+                                                                                                           alpha     std. err  Z (null=0)
+ result:        CHB  anc_2apes  Bangweulu        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -0.593236     0.066810     -8.879
+ result:        CHB  anc_2apes      Kafue        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -1.288056     0.110491    -11.658
+ result:        CHB  anc_2apes Zambia_Bemba        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -0.139901     0.045663     -3.064
+ result:        CHB  anc_2apes Zambia_Lozi        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI     0.005799     0.038330      0.151
+ result:        CHB  anc_2apes Zambia_TongaZam        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -0.266849     0.052564     -5.077
+ result:        CHB  anc_2apes     Bakiga        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI     0.901362     0.056161     16.050
+ result:        CHB  anc_2apes  Nzebi_Gab        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -0.548312     0.061218     -8.957
+ result:        CHB  anc_2apes  Nzime_Cam        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -0.434493     0.051530     -8.432
+ result:        CHB  anc_2apes    SEBantu        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -1.225927     0.103639    -11.829
+ result:        CHB  anc_2apes      Sotho        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -1.222611     0.101596    -12.034
+ result:        CHB  anc_2apes    SWBantu        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -0.584974     0.073464     -7.963
+ result:        CHB  anc_2apes       Zulu        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -1.023900     0.090612    -11.300
+ result:        CHB  anc_2apes       Igbo        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI    -0.101966     0.032273     -3.159
+ result:        CHB  anc_2apes        LWK        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI     0.475698     0.036715     12.957
+ result:        CHB  anc_2apes   Mandinka        YRI  :        CHB  anc_2apes Tanzania_Hadza        YRI     0.370337     0.035873     10.323
+ result:        CHB  anc_3apes  Bangweulu        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -0.598941     0.069594     -8.606
+ result:        CHB  anc_3apes      Kafue        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -1.301033     0.115038    -11.310
+ result:        CHB  anc_3apes Zambia_Bemba        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -0.149053     0.047298     -3.151
+ result:        CHB  anc_3apes Zambia_Lozi        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -0.017539     0.040003     -0.438
+ result:        CHB  anc_3apes Zambia_TongaZam        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -0.258693     0.053645     -4.822
+ result:        CHB  anc_3apes     Bakiga        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI     0.910673     0.058059     15.685
+ result:        CHB  anc_3apes  Nzebi_Gab        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -0.544107     0.062320     -8.731
+ result:        CHB  anc_3apes  Nzime_Cam        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -0.427371     0.053246     -8.026
+ result:        CHB  anc_3apes    SEBantu        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -1.252155     0.108367    -11.555
+ result:        CHB  anc_3apes      Sotho        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -1.249356     0.106169    -11.768
+ result:        CHB  anc_3apes    SWBantu        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -0.595510     0.076287     -7.806
+ result:        CHB  anc_3apes       Zulu        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -1.044830     0.093915    -11.125
+ result:        CHB  anc_3apes       Igbo        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI    -0.106126     0.033387     -3.179
+ result:        CHB  anc_3apes        LWK        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI     0.481561     0.038566     12.487
+ result:        CHB  anc_3apes   Mandinka        YRI  :        CHB  anc_3apes Tanzania_Hadza        YRI     0.373773     0.037633      9.932
+## end of run

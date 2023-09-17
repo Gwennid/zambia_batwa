@@ -1,0 +1,64 @@
+qpF4ratio: parameter file: par.f4ratio.20230917_eHGadmixture-Sabue
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.geno
+snpname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.snp
+indivname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.indiv
+popfilename: 20230917_popfile_eHGadmixture-Sabue
+## qpF4ratio version: 300
+nplist: 30
+  0                  CHB   36
+  1            anc_2apes    1
+  2            Bangweulu   36
+  3                  YRI   36
+  4       Ethiopia_Sabue   14
+  5                Kafue   33
+  6         Zambia_Bemba   13
+  7          Zambia_Lozi   21
+  8      Zambia_TongaZam    9
+  9               Bakiga   33
+ 10            Nzebi_Gab   20
+ 11            Nzime_Cam   36
+ 12              SEBantu   19
+ 13                Sotho   36
+ 14              SWBantu    8
+ 15                 Zulu   36
+ 16                 Igbo   36
+ 17                  LWK   36
+ 18             Mandinka   36
+ 19            anc_3apes    1
+jackknife block size:     0.050
+snps: 337051  indivs: 496
+number of blocks for block jackknife: 547
+                                                                                                           alpha     std. err  Z (null=0)
+ result:        CHB  anc_2apes  Bangweulu        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.411686     0.037905    -10.861
+ result:        CHB  anc_2apes      Kafue        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.893418     0.058305    -15.323
+ result:        CHB  anc_2apes Zambia_Bemba        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.097227     0.030453     -3.193
+ result:        CHB  anc_2apes Zambia_Lozi        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI     0.003872     0.026540      0.146
+ result:        CHB  anc_2apes Zambia_TongaZam        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.185272     0.033830     -5.477
+ result:        CHB  anc_2apes     Bakiga        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI     0.624646     0.031893     19.585
+ result:        CHB  anc_2apes  Nzebi_Gab        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.380460     0.035325    -10.770
+ result:        CHB  anc_2apes  Nzime_Cam        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.301465     0.030677     -9.827
+ result:        CHB  anc_2apes    SEBantu        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.850148     0.057478    -14.791
+ result:        CHB  anc_2apes      Sotho        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.847922     0.053887    -15.735
+ result:        CHB  anc_2apes    SWBantu        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.405834     0.044558     -9.108
+ result:        CHB  anc_2apes       Zulu        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.710117     0.050391    -14.092
+ result:        CHB  anc_2apes       Igbo        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI    -0.070852     0.021598     -3.281
+ result:        CHB  anc_2apes        LWK        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI     0.329551     0.024500     13.451
+ result:        CHB  anc_2apes   Mandinka        YRI  :        CHB  anc_2apes Ethiopia_Sabue        YRI     0.256691     0.022729     11.294
+ result:        CHB  anc_3apes  Bangweulu        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.414899     0.039813    -10.421
+ result:        CHB  anc_3apes      Kafue        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.900871     0.060727    -14.835
+ result:        CHB  anc_3apes Zambia_Bemba        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.103373     0.031543     -3.277
+ result:        CHB  anc_3apes Zambia_Lozi        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.012337     0.027526     -0.448
+ result:        CHB  anc_3apes Zambia_TongaZam        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.179299     0.034682     -5.170
+ result:        CHB  anc_3apes     Bakiga        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI     0.629962     0.032780     19.218
+ result:        CHB  anc_3apes  Nzebi_Gab        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.376881     0.036009    -10.466
+ result:        CHB  anc_3apes  Nzime_Cam        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.296019     0.031919     -9.274
+ result:        CHB  anc_3apes    SEBantu        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.866789     0.060427    -14.344
+ result:        CHB  anc_3apes      Sotho        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.864923     0.056757    -15.239
+ result:        CHB  anc_3apes    SWBantu        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.412449     0.046076     -8.951
+ result:        CHB  anc_3apes       Zulu        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.723314     0.052806    -13.698
+ result:        CHB  anc_3apes       Igbo        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI    -0.073619     0.022278     -3.305
+ result:        CHB  anc_3apes        LWK        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI     0.333007     0.025598     13.009
+ result:        CHB  anc_3apes   Mandinka        YRI  :        CHB  anc_3apes Ethiopia_Sabue        YRI     0.258576     0.024260     10.659
+## end of run

@@ -1,0 +1,64 @@
+qpF4ratio: parameter file: par.f4ratio.20230917_wRHGadmixture
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.geno
+snpname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.snp
+indivname: zbatwa10_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4_overlapanc_anc2fex.indiv
+popfilename: 20230917_popfile_wRHGadmixture
+## qpF4ratio version: 300
+nplist: 30
+  0                  CHB   36
+  1            anc_2apes    1
+  2            Bangweulu   36
+  3                  YRI   36
+  4             Baka_Cam   36
+  5                Kafue   33
+  6         Zambia_Bemba   13
+  7          Zambia_Lozi   21
+  8      Zambia_TongaZam    9
+  9               Bakiga   33
+ 10            Nzebi_Gab   20
+ 11            Nzime_Cam   36
+ 12              SEBantu   19
+ 13                Sotho   36
+ 14              SWBantu    8
+ 15                 Zulu   36
+ 16                 Igbo   36
+ 17                  LWK   36
+ 18             Mandinka   36
+ 19            anc_3apes    1
+jackknife block size:     0.050
+snps: 337051  indivs: 518
+number of blocks for block jackknife: 547
+                                                                                                           alpha     std. err  Z (null=0)
+ result:        CHB  anc_2apes  Bangweulu        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.196494     0.012390     15.859
+ result:        CHB  anc_2apes      Kafue        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.426223     0.011889     35.850
+ result:        CHB  anc_2apes Zambia_Bemba        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.046548     0.013708      3.396
+ result:        CHB  anc_2apes Zambia_Lozi        YRI  :        CHB  anc_2apes   Baka_Cam        YRI    -0.001635     0.012661     -0.129
+ result:        CHB  anc_2apes Zambia_TongaZam        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.088512     0.014565      6.077
+ result:        CHB  anc_2apes     Bakiga        YRI  :        CHB  anc_2apes   Baka_Cam        YRI    -0.297479     0.015652    -19.005
+ result:        CHB  anc_2apes  Nzebi_Gab        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.181590     0.011740     15.467
+ result:        CHB  anc_2apes  Nzime_Cam        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.143946     0.010252     14.041
+ result:        CHB  anc_2apes    SEBantu        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.405568     0.013668     29.672
+ result:        CHB  anc_2apes      Sotho        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.404457     0.011965     33.803
+ result:        CHB  anc_2apes    SWBantu        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.193733     0.016519     11.728
+ result:        CHB  anc_2apes       Zulu        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.338819     0.012104     27.992
+ result:        CHB  anc_2apes       Igbo        YRI  :        CHB  anc_2apes   Baka_Cam        YRI     0.033931     0.009617      3.528
+ result:        CHB  anc_2apes        LWK        YRI  :        CHB  anc_2apes   Baka_Cam        YRI    -0.156855     0.012936    -12.125
+ result:        CHB  anc_2apes   Mandinka        YRI  :        CHB  anc_2apes   Baka_Cam        YRI    -0.122202     0.011470    -10.654
+ result:        CHB  anc_3apes  Bangweulu        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.196775     0.012802     15.371
+ result:        CHB  anc_3apes      Kafue        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.427003     0.012378     34.496
+ result:        CHB  anc_3apes Zambia_Bemba        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.049158     0.014071      3.494
+ result:        CHB  anc_3apes Zambia_Lozi        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.006057     0.012908      0.469
+ result:        CHB  anc_3apes Zambia_TongaZam        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.085118     0.014858      5.729
+ result:        CHB  anc_3apes     Bakiga        YRI  :        CHB  anc_3apes   Baka_Cam        YRI    -0.298031     0.016229    -18.364
+ result:        CHB  anc_3apes  Nzebi_Gab        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.178725     0.011910     15.006
+ result:        CHB  anc_3apes  Nzime_Cam        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.140453     0.010679     13.152
+ result:        CHB  anc_3apes    SEBantu        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.410843     0.014251     28.828
+ result:        CHB  anc_3apes      Sotho        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.409906     0.012499     32.794
+ result:        CHB  anc_3apes    SWBantu        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.195622     0.016904     11.573
+ result:        CHB  anc_3apes       Zulu        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.342893     0.012624     27.162
+ result:        CHB  anc_3apes       Igbo        YRI  :        CHB  anc_3apes   Baka_Cam        YRI     0.035037     0.009815      3.570
+ result:        CHB  anc_3apes        LWK        YRI  :        CHB  anc_3apes   Baka_Cam        YRI    -0.157447     0.013544    -11.624
+ result:        CHB  anc_3apes   Mandinka        YRI  :        CHB  anc_3apes   Baka_Cam        YRI    -0.122275     0.012280     -9.957
+## end of run

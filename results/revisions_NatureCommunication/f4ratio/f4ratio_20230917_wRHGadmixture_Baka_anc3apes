@@ -1,0 +1,16 @@
+Target	Source	alpha	std.err	Z
+Bangweulu	Baka_Cam	0.196775	0.012802	15.371
+Kafue	Baka_Cam	0.427003	0.012378	34.496
+Zambia_Bemba	Baka_Cam	0.049158	0.014071	3.494
+Zambia_Lozi	Baka_Cam	0.006057	0.012908	0.469
+Zambia_TongaZam	Baka_Cam	0.085118	0.014858	5.729
+Bakiga	Baka_Cam	-0.298031	0.016229	-18.364
+Nzebi_Gab	Baka_Cam	0.178725	0.011910	15.006
+Nzime_Cam	Baka_Cam	0.140453	0.010679	13.152
+SEBantu	Baka_Cam	0.410843	0.014251	28.828
+Sotho	Baka_Cam	0.409906	0.012499	32.794
+SWBantu	Baka_Cam	0.195622	0.016904	11.573
+Zulu	Baka_Cam	0.342893	0.012624	27.162
+Igbo	Baka_Cam	0.035037	0.009815	3.570
+LWK	Baka_Cam	-0.157447	0.013544	-11.624
+Mandinka	Baka_Cam	-0.122275	0.012280	-9.957
