@@ -1,0 +1,5 @@
+indivname:    example.indiv  
+snpname:      example.snp
+genotypename: example.geno
+popfilename:  list_qp3Pop
+inbreed: yes
