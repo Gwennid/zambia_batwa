@@ -49,11 +49,12 @@ axis(side=2,at=c(1:nrow(datar_Baka)),labels=c("Ba.Kiga","Luhya","Mandinka","Lozi
 dev.off()
 
 # Plot eHG ancestry (alone, Supplementary Figure)
-pdf(file="20230917_f4ratio_eHG-Hadza_ancestry_in15pop.pdf",height=7,width=6,pointsize = 12)
+# There was a typo in the figure text, hence the more recent date corresponding to the second revision of the ms.
+pdf(file="20240310_f4ratio_eHG-Hadza_ancestry_in15pop.pdf",height=7,width=6,pointsize = 12)
 par(mfrow=c(1,1))
 par(mar=c(5,9,1,5)+0.1)
 c(min(datar_Hadza$alpha),max(datar_Hadza$alpha)) #Gives an indication of which min and max to use on the x axis
-plot(y=c(1:nrow(datar_Hadza)),x=datar_Hadza$alpha,pch=20,axes=FALSE,xlab="Estimated fraction of Hadza (Ethiopia) ancestry (alpha)",ylab="",xlim=c(-1.5,1))
+plot(y=c(1:nrow(datar_Hadza)),x=datar_Hadza$alpha,pch=20,axes=FALSE,xlab="Estimated fraction of Hadza (Tanzania) ancestry (alpha)",ylab="",xlim=c(-1.5,1))
 arrows(x0=datar_Hadza$alpha-datar_Hadza$std.err, y0=c(1:nrow(datar_Hadza)),x1=datar_Hadza$alpha+datar_Hadza$std.err, y1=c(1:nrow(datar_Hadza)), code=3, angle=90, length=0.02)
 axis(side=1)
 abline(v=0,lty=2)
