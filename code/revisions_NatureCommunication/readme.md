@@ -11,4 +11,4 @@ fits = qpgraph_resample_multi(f2, list(best.M1$graph[[1]], best.M2$graph[[1]]), 
 compare_fits(fits[[1]]$score_test, fits[[2]]$score_test)
 ```
 
-The value of $p_emp$ indicates whether the more complex model is a significantly better fit.
+The value of $p\\_emp$ indicates whether the more complex model is a significantly better fit.
