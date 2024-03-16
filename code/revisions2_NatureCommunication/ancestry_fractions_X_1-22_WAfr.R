@@ -89,7 +89,7 @@ write.table(data.frame(avgX$FID,y,x), col.names=c("FID","male_contribution","fem
 write.table(file="Xtoaut_ancestry_ratio_WAfr_ancestry",data.frame(avgX$FID,avgX$mean_WAfr/avgA$mean_WAfr),
             col.names=c("FID","ratio"),row.names=FALSE)
 
-## Using Khoe-San ancestry (as in the original submission
+## Using Khoe-San ancestry (as in the original submission)
 avgX <- read.table(file="avg_KS_chr23_weighted_25iterations_by_pop",header=TRUE)
 avgA <- read.table(file="avg_sd_KS_2500iterations_by_pop",header=TRUE)
 y <- 4*avgA$mean_KS - 3*avgX$mean_KS
@@ -100,6 +100,33 @@ write.table(file="Xtoaut_ancestry_ratio_KS_ancestry",data.frame(avgX$FID,avgX$me
 
 ##KS results: I get the same results like initially.
 
+# Depending on the composition of the population (males and females), the WAfr and KS contributions sum to 1 or not (e.g. in Baka from Gambia, 100% males -> the contributions sum to 1.)
 
+## Make a summary table
+contributions_WAfr <- read.table(file="male_female_contributions_WAfr",header=TRUE)
+contributions_KS <- read.table(file="male_female_contributions_KS",header=TRUE)
+avgX_KS <- read.table(file="avg_KS_chr23_weighted_25iterations_by_pop",header=TRUE)
+avgA_KS <- read.table(file="avg_sd_KS_2500iterations_by_pop",header=TRUE)
+avgX_WAfr <- read.table(file="avg_WAfr_chr23_weighted_25iterations_by_pop",header=TRUE)
+avgA_WAfr <- read.table(file="avg_sd_WAfr_2500iterations_by_pop",header=TRUE)
+write.table(data.frame(avgX_KS$FID,
+                       contributions_WAfr$female_contribution/contributions_WAfr$male_contribution,
+                       avgX_WAfr$mean_WAfr,
+                       avgA_WAfr$mean_WAfr,
+                       contributions_KS$female_contribution/contributions_KS$male_contribution,
+                       avgX_KS$mean_KS,
+                       avgA_KS$mean_KS),
+            col.names=c("FID","ratio_female_male_WAfr","HX_WAfr","HA_WAfr","ratio_female_male_KS","HX_KS","HA_KS"),
+            row.names=FALSE, file="ratio-female-male_and_ancestry-fractions_WAfr_KS")
 
-
+## Redo the table present in the initial submission, with X to autosomes ratio and the mean ancestry proportions for the HG/KS ancestry.
+#I'm adding the values for WAfr.
+write.table(data.frame(avgX_KS$FID,
+                       avgX_WAfr$mean_WAfr/avgA_WAfr$mean_WAfr,
+                       avgX_WAfr$mean_WAfr,
+                       avgA_WAfr$mean_WAfr,
+                       avgX_KS$mean_KS/avgA_KS$mean_KS,
+                       avgX_KS$mean_KS,
+                       avgA_KS$mean_KS),
+            col.names=c("FID","ratio_X_autosomes_WAfr","HX_WAfr","HA_WAfr","ratio_X_autosomes_KS","HX_KS","HA_KS"),
+            row.names=FALSE, file="ratio-X-A_and_ancestry-fractions_WAfr_KS")
