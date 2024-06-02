@@ -91,6 +91,8 @@ dev.off()
 
 #Correlation between eRHG and wRHG admixture
 cor.test(datar_Baka$alpha, datar_Batwa$alpha, method=c("spearman")) # S = 1.2434e-13, p-value < 2.2e-16, rho = 1
+## Test for positive association & require an exact p-value.
+cor.test(datar_Baka$alpha, datar_Batwa$alpha, method=c("spearman"), alternative="greater", exact=TRUE) #S = 1.2434e-13, p-value < 2.2e-16
 
 #Correlation between eRHG and KS admixture
 cor.test(datar_Juhoansi$alpha, datar_Batwa$alpha, method=c("spearman")) # S = 1.2434e-13, p-value < 2.2e-16, rho = 1
