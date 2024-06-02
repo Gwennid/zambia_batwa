@@ -181,8 +181,3 @@ barplot(allcat,beside=TRUE, width = 0.12, cex=2, names.arg=c("1-2","2-3","3-5"),
         xlab="ROH length category (Mb)", ylab="Mean Total ROH length (Mb)", cex.main =1.5, cex.axis=1, col=as.character(orderr$V2))
 legend("top",legend=newnames, ncol=2, fill=as.character(orderr$V2), cex=0.9, bty="n")
 dev.off()
-
-
-
-
-#TODO choose a color-blind friendly colour scheme for this article!
