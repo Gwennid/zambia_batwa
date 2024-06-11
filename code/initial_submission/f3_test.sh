@@ -1,15 +1,6 @@
 #20210128
 #Gwenna Breton
-#Goal: test f3 statistic calculation!
-
-#Comment: at the moment I do not know how to deal with the haploid data, so this is really just to play around!
-#Edit 20210212: apparently I did the right thing.
-
-#Question: Is LD an issue?
-#Edit 20210212: no.
-
-#Question: Does it figure out by itself the overlap between the samples included in the analysis?
-#Edit 20210212: yes.
+#Goal: f3 statistic calculation
 
 cd /proj/snic2020-2-10/uppstore2018150/private/tmp/prepareanalysisset_December2020
 root=omni1finalmerge_ancient4fexhap_2 #filtered for missingness; all individuals should have at least 15,000 variants.
