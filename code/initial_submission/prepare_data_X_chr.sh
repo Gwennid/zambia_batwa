@@ -1,8 +1,8 @@
 ###
-### Process the X chromosome.
+### Prepare data for the analyses contrasting X chromosome and autosomes.
 ###
-#Comment: I should have kept it and processed it together with the autosomes, it would have saved time. But it is as it is! Remove the same individuals and go through the same filtering steps.
-#Edit 20210121: I have realized that I do not have the X chromosome for most of the comparative datasets, and thus I will need a different autosomal dataset. Thus I decided to reprocess -for the datasets that I have, i.e. Zambian BaTwa and Bantu, Schlebusch 2012, KGP and Patin 2014 (to which I will perhaps, later, add Pagani 2015)- from the beginning, both autosomes and chrX together (it represents extra work only for the two Zambian datasets that I have already prepared). Fingers crossed!
+# We have the X chromosome data only for the Zambian BaTwa and agropastoralists, Schlebusch 2012, KGP and Patin 2014.
+#Thus we processed these datasets from the start again, focusing on the autosomes and X chromosomes. We redid the merging.
 
 interactive -p core -n 1 -A snic2018-8-397 -t 4:0:0
 module load bioinfo-tools plink/1.90b4.9
