@@ -1,0 +1,64 @@
+qpF4ratio: parameter file: par.f4ratio.20200613_KSadmixture
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: zbatwa9_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex4Loziexoverlapanc_anc2fex.geno
+snpname: zbatwa9_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex4Loziexoverlapanc_anc2fex.snp
+indivname: zbatwa9_zbantu9_Schlebusch2012_1KGP173_Gurdasani242_Haber71_Patin207_Scheinfeldt52_4fex4Loziexoverlapanc_anc2fex.indiv
+popfilename: 20200613_popfile_KSadmixture
+## qpF4ratio version: 300
+nplist: 30
+  0                  CHB   36
+  1            anc_2apes    1
+  2            Bangweulu   36
+  3             Juhoansi   17
+  4                  YRI   36
+  5                Kafue   33
+  6         Zambia_Bemba   13
+  7          Zambia_Lozi   21
+  8      Zambia_TongaZam    9
+  9               Bakiga   33
+ 10            Nzebi_Gab   20
+ 11            Nzime_Cam   36
+ 12              SEBantu   19
+ 13                Sotho   36
+ 14              SWBantu    8
+ 15                 Zulu   36
+ 16                 Igbo   36
+ 17                  LWK   36
+ 18             Mandinka   36
+ 19            anc_3apes    1
+jackknife block size:     0.050
+snps: 337036  indivs: 499
+number of blocks for block jackknife: 547
+                                                                                                           alpha     std. err  Z (null=0)
+ result:        CHB  anc_2apes  Bangweulu   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.901968     0.006292    143.358
+ result:        CHB  anc_2apes      Kafue   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.787361     0.005840    134.814
+ result:        CHB  anc_2apes Zambia_Bemba   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.976765     0.006892    141.730
+ result:        CHB  anc_2apes Zambia_Lozi   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     1.000841     0.006314    158.501
+ result:        CHB  anc_2apes Zambia_TongaZam   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.955916     0.007320    130.597
+ result:        CHB  anc_2apes     Bakiga   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     1.148419     0.007409    154.995
+ result:        CHB  anc_2apes  Nzebi_Gab   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.909423     0.006018    151.123
+ result:        CHB  anc_2apes  Nzime_Cam   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.928237     0.005387    172.314
+ result:        CHB  anc_2apes    SEBantu   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.797642     0.006731    118.494
+ result:        CHB  anc_2apes      Sotho   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.798175     0.005746    138.903
+ result:        CHB  anc_2apes    SWBantu   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.903348     0.008418    107.315
+ result:        CHB  anc_2apes       Zulu   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.830974     0.006165    134.785
+ result:        CHB  anc_2apes       Igbo   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     0.983070     0.004860    202.271
+ result:        CHB  anc_2apes        LWK   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     1.078257     0.006193    174.097
+ result:        CHB  anc_2apes   Mandinka   Juhoansi  :        CHB  anc_2apes        YRI   Juhoansi     1.060974     0.005579    190.186
+ result:        CHB  anc_3apes  Bangweulu   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.902509     0.006498    138.886
+ result:        CHB  anc_3apes      Kafue   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.788422     0.006048    130.364
+ result:        CHB  anc_3apes Zambia_Bemba   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.975633     0.007028    138.828
+ result:        CHB  anc_3apes Zambia_Lozi   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.997021     0.006407    155.614
+ result:        CHB  anc_3apes Zambia_TongaZam   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.957928     0.007420    129.098
+ result:        CHB  anc_3apes     Bakiga   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     1.147690     0.007578    151.446
+ result:        CHB  anc_3apes  Nzebi_Gab   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.911449     0.006056    150.516
+ result:        CHB  anc_3apes  Nzime_Cam   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.930464     0.005554    167.527
+ result:        CHB  anc_3apes    SEBantu   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.796411     0.006959    114.445
+ result:        CHB  anc_3apes      Sotho   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.796852     0.005940    134.157
+ result:        CHB  anc_3apes    SWBantu   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.903049     0.008528    105.896
+ result:        CHB  anc_3apes       Zulu   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.830112     0.006397    129.763
+ result:        CHB  anc_3apes       Igbo   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     0.982631     0.004930    199.333
+ result:        CHB  anc_3apes        LWK   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     1.078040     0.006429    167.696
+ result:        CHB  anc_3apes   Mandinka   Juhoansi  :        CHB  anc_3apes        YRI   Juhoansi     1.060620     0.005937    178.657
+## end of run
