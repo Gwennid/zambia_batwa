@@ -1,1 +1,0 @@
-The file "summary_531ind_2500run" containing ancestry fractions for the Omni1 dataset, for each for a hundred sets and 25 repeats of ADMIXTURE, is not included due to its size. It can be made available upon request.
